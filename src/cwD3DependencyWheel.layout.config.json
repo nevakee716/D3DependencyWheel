@@ -1,0 +1,22 @@
+{
+	"Name": "cw-layout-d3dependencywheel",
+	"DisplayName": "D3 JS Dependency Wheel",
+	"Description": "Display a short presentation",
+	"JavaScriptClassName": "cwLayoutD3DependencyWheel",
+	"Options": [{
+		"Id": "source",
+		"DisplayName": "Source",
+		"Description": "Source",
+		"Type": 1
+	}, {
+		"Id": "jump",
+		"DisplayName": "Jump",
+		"Description": "Jump",
+		"Type": 1
+	}, {
+		"Id": "target",
+		"DisplayName": "Target",
+		"Description": "Target",
+		"Type": 1
+	}]
+}

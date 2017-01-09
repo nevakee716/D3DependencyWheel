@@ -9,6 +9,7 @@
 		this.drawOneMethod = cwLayoutD3DependencyWheel.drawOne.bind(this);
 		this.hasTooltip = true;
 		cwApi.registerLayoutForJSActions(this);
+
 	};
 
 	cwLayoutD3DependencyWheel.drawOne = function(output, item, callback, nameOnly) {
@@ -76,7 +77,7 @@
 			}
 		}
 		return targetNamesBySourceName;
-	}
+	};
 
 	cwLayoutD3DependencyWheel.setMatrix = function(packageNames, targetNamesBySourceName) {
 		var matrix = [];
@@ -111,7 +112,7 @@
 		if (!cwApi.isUndefined(cwApi.cwLayouts[associationSchema.LayoutDrawOne].drawOne)) {
 			layout.drawOneMethod = cwApi.cwLayouts[associationSchema.LayoutDrawOne].drawOne.bind(layout);
 		}
-		return associatedObj = layout.drawAssociations(output, null, item, null);
+		return associatedObj = layout.drawAssociations2(output, null, item, null);
 	};
 
 	cwLayoutD3DependencyWheel.getNextLayoutNodeAndItems = function(node, schema, sources) {
@@ -171,9 +172,28 @@
 	};
 
 	cwLayoutD3DependencyWheel.prototype.drawAssociations = function(output, associationTitleText, object) {
+
+		var that = this;
+        var libToLoad = [];
+
+        if(cwAPI.isDebugMode() === true) {
+        	this.drawAssociations2(output, associationTitleText, object);
+        } else {
+            libToLoad = ['modules/d3/d3.concat.js','modules/d3DependenctWheel/d3DependenctWheel.concat.js'];
+            // AsyncLoad
+            cwApi.customLibs.aSyncLayoutLoader.loadUrls(libToLoad,function(error){
+                if(error === null) {
+            		that.drawAssociations2(output, associationTitleText, object);
+                } else {
+                    cwAPI.Log.Error(error);
+                }
+            });
+        }
+    };
+
+
+	cwLayoutD3DependencyWheel.prototype.drawAssociations2 = function(output, associationTitleText, object) {
 		'use strict';
-
-
 		var i, s, child, associationTargetNode, objectId, sortedItems;
 
 		var packageNames = [],

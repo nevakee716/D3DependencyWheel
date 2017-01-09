@@ -2,5 +2,5 @@
 	path = external/ASyncLayoutLoader
 	url = https://github.com/nevakee716/ASyncLayoutLoader.git
 [submodule "external"]
-	path = external
+	path = external/ASyncLayoutLoader
 	url = https://github.com/nevakee716/ASyncLayoutLoader.git

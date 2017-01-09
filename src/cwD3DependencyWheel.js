@@ -8,7 +8,13 @@
 		cwApi.extend(this, cwApi.cwLayouts.CwLayout, options, viewSchema);
 		this.drawOneMethod = cwLayoutD3DependencyWheel.drawOne.bind(this);
 		this.hasTooltip = true;
-		cwApi.registerLayoutForJSActions(this);
+		this.isJumpLevel = this.options.CustomOptions['jump'];
+		this.isTargetLevel = this.options.CustomOptions['target'];
+		this.isSourceLevel = this.options.CustomOptions['source'];
+		if(this.isSourceLevel) {
+			cwApi.registerLayoutForJSActions(this);
+		}
+
 
 	};
 
@@ -112,7 +118,7 @@
 		if (!cwApi.isUndefined(cwApi.cwLayouts[associationSchema.LayoutDrawOne].drawOne)) {
 			layout.drawOneMethod = cwApi.cwLayouts[associationSchema.LayoutDrawOne].drawOne.bind(layout);
 		}
-		return associatedObj = layout.drawAssociations2(output, null, item, null);
+		return associatedObj = layout.drawAssociations(output, null, item, null);
 	};
 
 	cwLayoutD3DependencyWheel.getNextLayoutNodeAndItems = function(node, schema, sources) {
@@ -154,16 +160,16 @@
 		};
 	};
 
-	cwLayoutD3DependencyWheel.prototype.buildWheel = function(packageNames, matrix, itemsByKey, dataByName, selection) {
+	cwLayoutD3DependencyWheel.prototype.buildWheel = function() {
 
 		var chart = d3.chart.dependencyWheel();
 		var data = {
-			packageNames: packageNames, //['Business Role', 'Business Activity', 'Entity'],
-			matrix: matrix, // B doesn't depend on A or Main
-			itemsByKey : itemsByKey,
-			dataByName : dataByName
+			packageNames: this.packageNames, //['Business Role', 'Business Activity', 'Entity'],
+			matrix: this.matrix, // B doesn't depend on A or Main
+			itemsByKey : this.targetNamesBySourceName,
+			dataByName : this.urlByName
 		};
-
+		var selection = this.selection;
 		setTimeout(function() {
 			d3.select('.' + selection)
 				.datum(data)
@@ -171,41 +177,44 @@
 		}, 500);
 	};
 
-	cwLayoutD3DependencyWheel.prototype.drawAssociations = function(output, associationTitleText, object) {
 
-		var that = this;
-        var libToLoad = [];
+				
 
-        if(cwAPI.isDebugMode() === true) {
-        	this.drawAssociations2(output, associationTitleText, object);
-        } else {
-            libToLoad = ['modules/d3/d3.concat.js','modules/d3DependenctWheel/d3DependenctWheel.concat.js'];
-            // AsyncLoad
-            cwApi.customLibs.aSyncLayoutLoader.loadUrls(libToLoad,function(error){
-                if(error === null) {
-            		that.drawAssociations2(output, associationTitleText, object);
-                } else {
-                    cwAPI.Log.Error(error);
-                }
-            });
-        }
+	cwLayoutD3DependencyWheel.prototype.applyJavaScript = function(output, associationTitleText, object) {
+
+		if(this.isSourceLevel) {
+			var that = this;
+	        var libToLoad = [];
+
+	        if(cwAPI.isDebugMode() === true) {
+	        	this.buildWheel();
+	        } else {
+	            // AsyncLoad
+	            cwApi.customLibs.aSyncLayoutLoader.loadUrls(['modules/d3/d3.min.js'],function(error){
+	                if(error === null) {
+	            		cwApi.customLibs.aSyncLayoutLoader.loadUrls(['modules/d3DependenctWheel/d3DependenctWheel.min.js'],function(error){
+			                if(error === null) {
+			            		that.buildWheel();
+			                } else {
+			                    cwAPI.Log.Error(error);
+			                }
+			            });
+	                } else {
+	                    cwAPI.Log.Error(error);
+	                }
+	            });
+	        }
+	    }
     };
 
 
-	cwLayoutD3DependencyWheel.prototype.drawAssociations2 = function(output, associationTitleText, object) {
+	cwLayoutD3DependencyWheel.prototype.drawAssociations = function(output, associationTitleText, object) {
 		'use strict';
 		var i, s, child, associationTargetNode, objectId, sortedItems;
 
-		var packageNames = [],
-			targetObjectsBySource = {},
-			targetNamesBySourceName = {},
-			urlByName = {},
-			matrix = [],
-			isJumpLevel, isTargetLevel, isSourceLevel;
+		var targetObjectsBySource = {},
+			urlByName = {};
 
-		isJumpLevel = this.options.CustomOptions['jump'];
-		isTargetLevel = this.options.CustomOptions['target'];
-		isSourceLevel = this.options.CustomOptions['source'];
 
 		if (cwApi.isUndefinedOrNull(object) || cwApi.isUndefined(object.associations)) {
 			// Is a creation page therefore a real object does not exist
@@ -224,17 +233,17 @@
 			}
 		}
 		
-		if (isJumpLevel) {
+		if (this.isJumpLevel) {
 			var targetObjects = cwLayoutD3DependencyWheel.getNextLayoutNodeAndItems(this, this.viewSchema, [object]);
 			return targetObjects;
 		}
-		if (isTargetLevel) {
+		if (this.isTargetLevel) {
 			return {
 				layout: this,
 				data: associationTargetNode
 			};
 		}
-		if (isSourceLevel) {
+		if (this.isSourceLevel) {
 			if (associationTargetNode.length !== 0) {
 				'use strict';
 				
@@ -257,11 +266,12 @@
 					}
 				}
 
-				targetNamesBySourceName = this.getTargetNamesBySourceName(targetObjectsBySource);
-				packageNames = this.getPackageNames(targetObjectsBySource, urlByName);
-				matrix = cwLayoutD3DependencyWheel.setMatrix(packageNames, targetNamesBySourceName);
+				this.selection = selection;
+				this.urlByName = urlByName;
+				this.targetNamesBySourceName = this.getTargetNamesBySourceName(targetObjectsBySource);
+				this.packageNames = this.getPackageNames(targetObjectsBySource, urlByName);
+				this.matrix = cwLayoutD3DependencyWheel.setMatrix(this.packageNames, this.targetNamesBySourceName);
 
-				this.buildWheel(packageNames, matrix, targetNamesBySourceName, urlByName, selection);
 			} else {
 				output.push('<div class="', this.nodeID, '">Sorry, no content</div>');
 			}

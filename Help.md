@@ -42,7 +42,7 @@
     
     <meta name="pjax-timeout" content="1000">
     
-    <meta name="request-id" content="54E990BA:77C9:CCC22EF:587398CA" data-pjax-transient>
+    <meta name="request-id" content="54E990BA:77C9:CE9DFA9:5873B304" data-pjax-transient>
 
     <meta name="msapplication-TileImage" content="/windows-tile.png">
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -52,7 +52,7 @@
 <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
     <meta name="google-analytics" content="UA-3769691-2">
 
-<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="54E990BA:77C9:CCC22EF:587398CA" name="octolytics-dimension-request_id" />
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="54E990BA:77C9:CE9DFA9:5873B304" name="octolytics-dimension-request_id" />
 <meta content="/&lt;user-name&gt;/&lt;repo-name&gt;" data-pjax-transient="true" name="analytics-location" />
 
 
@@ -65,13 +65,13 @@
     <meta name="user-login" content="">
 
         <meta name="expected-hostname" content="github.com">
-      <meta name="js-proxy-site-detection-payload" content="ZGFiNjhjZTFhNTA0ZGMzMTRkNzYwMjE0ZTcyZTI0MzQwZWQ0YzM5ZTJkNzY0MDFhZDhkOWJkMGQ0ODUzZGU5Znx7InJlbW90ZV9hZGRyZXNzIjoiODQuMjMzLjE0NC4xODYiLCJyZXF1ZXN0X2lkIjoiNTRFOTkwQkE6NzdDOTpDQ0MyMkVGOjU4NzM5OENBIiwidGltZXN0YW1wIjoxNDgzOTcwNzYyLCJob3N0IjoiZ2l0aHViLmNvbSJ9">
+      <meta name="js-proxy-site-detection-payload" content="MTk0MGY4ZjEwZTI0NzJmMjJjYzc1ODQ1NzdhM2RjN2IwNTdlMTE2OTk0M2NlNmUwMjUyZTVkMzUzOTkwNmI3YXx7InJlbW90ZV9hZGRyZXNzIjoiODQuMjMzLjE0NC4xODYiLCJyZXF1ZXN0X2lkIjoiNTRFOTkwQkE6NzdDOTpDRTlERkE5OjU4NzNCMzA0IiwidGltZXN0YW1wIjoxNDgzOTc3NDc2LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
 
 
       <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
       <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
 
-    <meta name="html-safe-nonce" content="ddf42c33e47dc49d6e0467fac6fb64e8c116be2f">
+    <meta name="html-safe-nonce" content="d5c0267c1c54d6a4daf8a4ba4e1afcfc3dbc2b88">
 
     <meta http-equiv="x-pjax-version" content="bc00a4fc50c2737cd05d8de46a7cc726">
     
@@ -299,7 +299,7 @@
         <a data-pjax href="/nevakee716/D3DependencyWheel/commits/master">
             <svg aria-hidden="true" class="octicon octicon-history" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M8 13H6V6h5v2H8v5zM7 1C4.81 1 2.87 2.02 1.59 3.59L0 2v4h4L2.5 4.5C3.55 3.17 5.17 2.3 7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-.34.03-.67.09-1H.08C.03 7.33 0 7.66 0 8c0 3.86 3.14 7 7 7s7-3.14 7-7-3.14-7-7-7z"/></svg>
             <span class="num text-emphasized">
-              7
+              12
             </span>
             commits
         </a>
@@ -501,7 +501,7 @@
 
 
 
-<include-fragment class="commit-tease commit-loader" src="/nevakee716/D3DependencyWheel/tree-commit/8e37027c408c2e325118561aea26fb5adae82838">
+<include-fragment class="commit-tease commit-loader" src="/nevakee716/D3DependencyWheel/tree-commit/0c4e4092ef318a8e21ba42a79fee146169c07166">
   <div class="blank">
     <img alt="" class="loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" />
     Fetching latest commit…
@@ -513,7 +513,7 @@
 
 <div class="file-wrap">
 
-  <a href="/nevakee716/D3DependencyWheel/tree/8e37027c408c2e325118561aea26fb5adae82838" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+  <a href="/nevakee716/D3DependencyWheel/tree/0c4e4092ef318a8e21ba42a79fee146169c07166" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
 
   <table class="files js-navigation-container js-active-navigation-container" data-pjax>
 
@@ -526,19 +526,36 @@
 
         <tr class="js-navigation-item">
           <td class="icon">
-            <svg aria-hidden="true" class="octicon octicon-file-submodule" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M10 7H4v7h9c.55 0 1-.45 1-1V8h-4V7zM9 9H5V8h4v1zm4-5H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h2V7c0-.55.45-1 1-1h6c.55 0 1 .45 1 1h3V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
             <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
           </td>
           <td class="content">
-            <span class="css-truncate css-truncate-target"><span title="external @ 490b67b"><a href="/nevakee716/ASyncLayoutLoader/tree/490b67bbac90116c2ef07aff9f1810ff04897731" data-skip-pjax="true">external @ 490b67b</a></span></span>
+            <span class="css-truncate css-truncate-target"><a href="/nevakee716/D3DependencyWheel/tree/master/dist" class="js-navigation-open" id="2a6d07eef8b10b84129b42424ed99327-f8e8c4564192422a197fcfb3566a28061e8dae60" title="dist">dist</a></span>
           </td>
           <td class="message">
             <span class="css-truncate css-truncate-target">
-                  <a href="/nevakee716/D3DependencyWheel/commit/17f7107dcc78be21c5e6d59f33ebf0ea6d2743cf" class="message" data-pjax="true" title="update loader">update loader</a>
+                  <a href="/nevakee716/D3DependencyWheel/commit/9cfd542dd405ab88371b3c13147ab281c9313706" class="message" data-pjax="true" title="update version">update version</a>
             </span>
           </td>
           <td class="age">
-            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-01-09T14:04:24Z">Jan 9, 2017</time-ago></span>
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-01-09T14:06:55Z">Jan 9, 2017</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/nevakee716/D3DependencyWheel/tree/master/external" class="js-navigation-open" id="6a21b6995a068148bbb65c8f949b3fb2-39a3d5c29d6aa0e372e49b58bbe2184808853bd3" title="external">external</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/nevakee716/D3DependencyWheel/commit/75e47004523d204696b9fd87956e3d3e3b43b10b" class="message" data-pjax="true" title="async properly set">async properly set</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-01-09T15:56:28Z">Jan 9, 2017</time-ago></span>
           </td>
         </tr>
         <tr class="js-navigation-item">
@@ -564,15 +581,15 @@
             <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
           </td>
           <td class="content">
-            <span class="css-truncate css-truncate-target"><a href="/nevakee716/D3DependencyWheel/tree/master/src" class="js-navigation-open" id="25d902c24283ab8cfbac54dfa101ad31-2d951030a8dd58c9730871bbf77db07a02719f54" title="src">src</a></span>
+            <span class="css-truncate css-truncate-target"><a href="/nevakee716/D3DependencyWheel/tree/master/src" class="js-navigation-open" id="25d902c24283ab8cfbac54dfa101ad31-e7e037aea2f38c290ac16a9dc6617752799a1f6f" title="src">src</a></span>
           </td>
           <td class="message">
             <span class="css-truncate css-truncate-target">
-                  <a href="/nevakee716/D3DependencyWheel/commit/8e37027c408c2e325118561aea26fb5adae82838" class="message" data-pjax="true" title="async management">async management</a>
+                  <a href="/nevakee716/D3DependencyWheel/commit/0c4e4092ef318a8e21ba42a79fee146169c07166" class="message" data-pjax="true" title="modify class structure">modify class structure</a>
             </span>
           </td>
           <td class="age">
-            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-01-09T14:05:45Z">Jan 9, 2017</time-ago></span>
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-01-09T15:57:43Z">Jan 9, 2017</time-ago></span>
           </td>
         </tr>
         <tr class="js-navigation-item">
@@ -615,15 +632,15 @@
             <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
           </td>
           <td class="content">
-            <span class="css-truncate css-truncate-target"><a href="/nevakee716/D3DependencyWheel/blob/master/.gitmodules" class="js-navigation-open" id="8903239df476d7401cf9e76af0252622-4584bd77eb4c9c5913c96541cc3870adf9978ba1" title=".gitmodules">.gitmodules</a></span>
+            <span class="css-truncate css-truncate-target"><a href="/nevakee716/D3DependencyWheel/blob/master/.gitmodules" class="js-navigation-open" id="8903239df476d7401cf9e76af0252622-50567248909079b3925ceb3466e2364532a839e1" title=".gitmodules">.gitmodules</a></span>
           </td>
           <td class="message">
             <span class="css-truncate css-truncate-target">
-                  <a href="/nevakee716/D3DependencyWheel/commit/17f7107dcc78be21c5e6d59f33ebf0ea6d2743cf" class="message" data-pjax="true" title="update loader">update loader</a>
+                  <a href="/nevakee716/D3DependencyWheel/commit/6b2b8e6fcf4e2d0ca1f1bd65c3450cbc16439a97" class="message" data-pjax="true" title="modify libs">modify libs</a>
             </span>
           </td>
           <td class="age">
-            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-01-09T14:04:24Z">Jan 9, 2017</time-ago></span>
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-01-09T15:54:49Z">Jan 9, 2017</time-ago></span>
           </td>
         </tr>
         <tr class="js-navigation-item">
@@ -632,15 +649,49 @@
             <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
           </td>
           <td class="content">
-            <span class="css-truncate css-truncate-target"><a href="/nevakee716/D3DependencyWheel/blob/master/package.json" class="js-navigation-open" id="b9cfc7f2cdf78a7f4b91a753d10865a2-1773242b885fcb5225919e30e464719bee87caed" title="package.json">package.json</a></span>
+            <span class="css-truncate css-truncate-target"><a href="/nevakee716/D3DependencyWheel/blob/master/Help.md" class="js-navigation-open" id="d52a224dfda6a80478a01258f65d45b2-7a3af64a6fe274def20a26140b99e9c5b6e24371" title="Help.md">Help.md</a></span>
           </td>
           <td class="message">
             <span class="css-truncate css-truncate-target">
-                  <a href="/nevakee716/D3DependencyWheel/commit/8b1dcfb9213fc2bb1610d421baf52937c9f2cd12" class="message" data-pjax="true" title="modify package">modify package</a>
+                  <a href="/nevakee716/D3DependencyWheel/commit/9cfd542dd405ab88371b3c13147ab281c9313706" class="message" data-pjax="true" title="update version">update version</a>
             </span>
           </td>
           <td class="age">
-            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-01-05T10:54:46Z">Jan 5, 2017</time-ago></span>
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-01-09T14:06:55Z">Jan 9, 2017</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/nevakee716/D3DependencyWheel/blob/master/Help.pdf" class="js-navigation-open" id="b928729f5603e4ae45f6bba809ffc93f-f0f7c041207c17b47f9034934b0f55966285897f" title="Help.pdf">Help.pdf</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/nevakee716/D3DependencyWheel/commit/9cfd542dd405ab88371b3c13147ab281c9313706" class="message" data-pjax="true" title="update version">update version</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-01-09T14:06:55Z">Jan 9, 2017</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/nevakee716/D3DependencyWheel/blob/master/package.json" class="js-navigation-open" id="b9cfc7f2cdf78a7f4b91a753d10865a2-a8637c3b349eb71d2843ac373db81b23cce738c0" title="package.json">package.json</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/nevakee716/D3DependencyWheel/commit/84e2747d614c62d8ff26fb803dd0ee593a36a1f8" class="message" data-pjax="true" title="2.0.0">2.0.0</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-01-09T14:06:07Z">Jan 9, 2017</time-ago></span>
           </td>
         </tr>
     </tbody>
@@ -679,7 +730,7 @@
       <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
 </a>
     <ul class="site-footer-links">
-      <li>&copy; 2017 <span title="0.12536s from github-fe118-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+      <li>&copy; 2017 <span title="0.11964s from github-fe151-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
         <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
         <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
         <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>

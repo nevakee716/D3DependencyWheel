@@ -192,7 +192,7 @@
 	            // AsyncLoad
 	            cwApi.customLibs.aSyncLayoutLoader.loadUrls(['modules/d3/d3.min.js'],function(error){
 	                if(error === null) {
-	            		cwApi.customLibs.aSyncLayoutLoader.loadUrls(['modules/d3DependenctWheel/d3DependenctWheel.min.js'],function(error){
+	            		cwApi.customLibs.aSyncLayoutLoader.loadUrls(['modules/d3/d3.dependenctwheel.js'],function(error){
 			                if(error === null) {
 			            		that.buildWheel();
 			                } else {

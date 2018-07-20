@@ -1,7 +1,7 @@
 {
   "name": "D3DependencyWheel",
   "description": "Allow you to display a D3DependencyWheel",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "main": "cwD3DependencyWheel.js",
   "scripts": {
     "test": ""
